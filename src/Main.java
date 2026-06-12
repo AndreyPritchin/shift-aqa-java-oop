@@ -3,7 +3,7 @@ public class Main {
         Autobot bumblebee = new Autobot("Bumblebee", "Autobots");
         Decepticon megatron = new Decepticon("Megatron", "Decepticons");
 
-        System.out.println(bumblebee.teamName);
+        System.out.println(bumblebee.getTeamName());
         bumblebee.run();
         bumblebee.fire();
         bumblebee.charge();
@@ -11,7 +11,7 @@ public class Main {
 
         System.out.println();
 
-        System.out.println(megatron.teamName);
+        System.out.println(megatron.getTeamName());
         megatron.run();
         megatron.fire();
         megatron.charge();
