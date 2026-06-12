@@ -6,18 +6,18 @@ public class Main {
         Autobot bumblebee = new Autobot("Bumblebee", "Autobots");
         Decepticon megatron = new Decepticon("Megatron", "Decepticons");
 
-        System.out.println(bumblebee.teamName);
-        bumblebee.run(bumblebee.name);
-        bumblebee.fire(bumblebee.name);
-        bumblebee.charge(bumblebee.name);
+        System.out.println(bumblebee.getTeamName());
+        bumblebee.run(bumblebee.getName());
+        bumblebee.fire(bumblebee.getName());
+        bumblebee.charge(bumblebee.getName());
         bumblebee.transform();
 
         System.out.println();
 
-        System.out.println(megatron.teamName);
-        megatron.run(megatron.name);
-        megatron.fire(megatron.name);
-        megatron.charge(megatron.name);
+        System.out.println(megatron.getTeamName());
+        megatron.run(megatron.getName());
+        megatron.fire(megatron.getName());
+        megatron.charge(megatron.getName());
         megatron.transform();
 
         System.out.println();
