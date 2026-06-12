@@ -1,5 +1,5 @@
 public class Decepticon extends Transformer {
-    public String teamName;
+    private String teamName;
     private final String eyeColor = "red";
     private boolean kindness = false;
 
