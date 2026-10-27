@@ -1,4 +1,4 @@
-public class Transformer {
+public abstract class Transformer {
     private String name;
 
     public Transformer(String name) {
@@ -13,15 +13,10 @@ public class Transformer {
         this.name = name;
     }
 
-    public void run() {
-        System.out.println(this.name + " is running");
-    }
+    public abstract void transform();
 
-    public void fire() {
-        System.out.println(this.name + " is firing");
-    }
-
-    public void charge() {
-        System.out.println(this.name + " is charging");
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "{name: " + name + "}";
     }
 }

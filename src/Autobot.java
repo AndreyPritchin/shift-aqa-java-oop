@@ -1,4 +1,4 @@
-public class Autobot extends Transformer {
+public class Autobot extends Transformer implements Action {
     private String teamName;
     private final String eyeColor = "blue";
     private boolean kindness = true;
@@ -28,7 +28,18 @@ public class Autobot extends Transformer {
         this.kindness = kindness;
     }
 
+    @Override
     public void transform() {
         System.out.println(getName() + " transforming into a vehicle");
+    }
+
+    @Override
+    public void fire(String name) {
+        System.out.println(name + " is firing");
+    }
+
+    @Override
+    public void charge(String name) {
+        System.out.println(name + " is charging");
     }
 }
